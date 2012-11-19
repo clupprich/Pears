@@ -10,7 +10,7 @@
 ******************************************************************/
 // http://codex.wordpress.org/Function_Reference/get_categories
  
- foreach( get_categories('hide_empty=1','order_by=name') as $cat ) :
+ foreach( get_categories(array('hide_empty' => '1', 'order_by' => 'name', 'exclude' => array(1))) as $cat ) :
  if( !$cat->parent ) {
  echo '<h2><a href="#">' . $cat->name . '</a></h2><ul>';
  process_cat_tree( $cat->term_id );
