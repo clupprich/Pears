@@ -6,7 +6,7 @@
 	
 	<p class="cc">This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
 
-	<p><a href="http://simplebits.com" id="sb"><img src="/wp-content/themes/pears/images/sb-black.png" /></a></p>
+	<p><a href="http://simplebits.com" id="sb"><img src="<?php bloginfo('template_directory'); ?>/images/sb-black.png" /></a></p>
 </div> <!-- /footer -->
 
 <!-- jQuery -->
