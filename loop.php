@@ -42,27 +42,27 @@
   </style>
 
   <div id="pattern" class="mod group">
-  			<h3 class="label">Welcome</h3> 
+			<h3 class="label">Welcome</h3> 
 			  
-  			<div id="pattern-wrap" class="group">
-          <?php the_content(); ?>
-  			</div>
-  		</div>
+			<div id="pattern-wrap" class="group">
+        <?php the_content(); ?>
+			</div>
+		</div>
 		
-  		<div class="group">
-  			<div id="markup" class="mod">
-  				<h3 class="label">HTML</h3> <a href="#" class="clip" title="select code for copying"><img src="<?php bloginfo('template_directory'); ?>/images/icon-copy.png" alt="copy" /></a>
-  				<textarea class="mod-ta">
-  <?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>			
-  				</textarea>
-  			</div>
+		<div class="group">
+			<div id="markup" class="mod">
+				<h3 class="label">HTML</h3> <a href="#" class="clip" title="select code for copying"><img src="<?php bloginfo('template_directory'); ?>/images/icon-copy.png" alt="copy" /></a>
+				<textarea class="mod-ta">
+<?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>			
+				</textarea>
+			</div>
 			
-  			<div id="style" class="mod">
-  				<h3 class="label">CSS</h3> <a href="#" class="clip" title="select code for copying"><img src="<?php bloginfo('template_directory'); ?>/images/icon-copy.png" alt="copy" /></a>
-  				<textarea id="css-code" class="mod-ta">
-  <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
-  				</textarea>
-  			</div>
-  		</div>
+			<div id="style" class="mod">
+				<h3 class="label">CSS</h3> <a href="#" class="clip" title="select code for copying"><img src="<?php bloginfo('template_directory'); ?>/images/icon-copy.png" alt="copy" /></a>
+				<textarea id="css-code" class="mod-ta">
+<?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
+				</textarea>
+			</div>
+		</div>
 		
 <?php endwhile; // End the loop. Whew. ?>
