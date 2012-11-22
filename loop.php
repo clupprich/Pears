@@ -41,6 +41,10 @@
   <?php $key="css"; echo get_post_meta($post->ID, $key, true); ?>
   </style>
 
+	<script type="text/javascript" charset="utf-8" id="c">
+	<?php $key="js"; echo get_post_meta($post->ID, $key, true); ?>
+	</script>
+
   <div id="pattern" class="mod group">
 			<h3 class="label">Welcome</h3> 
 			  
