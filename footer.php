@@ -9,9 +9,6 @@
 	<p><a href="http://simplebits.com" id="sb"><img src="<?php bloginfo('template_directory'); ?>/images/sb-black.png" /></a></p>
 </div> <!-- /footer -->
 
-<!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-
 <script>
 $(document).ready(function() { 
 	// update rendered pattern when user edits the textareas
