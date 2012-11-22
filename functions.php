@@ -528,12 +528,17 @@ function pears_meta_box( $post ) {
 
   	$html = get_post_meta($post->ID,'html',true);
   	$css = get_post_meta($post->ID,'css',true);
+    $js = get_post_meta($post->ID,'js',true);
 
 	echo '<p>These fields are for the HTML markup and CSS styles.  The post body can be used for notes.</p>';
 	echo '<label for="html">HTML</label>';
   	echo '<p><textarea id="html" name="html" rows="20" cols="90" />' . $html . '</textarea></p>';
 	echo '<label for="css">CSS</label>	';
   	echo '<p><textarea id="css" name="css" rows="20" cols="90" />' . $css . '</textarea></p>';
+    
+  echo '<label for="js">JS</label>	';
+  	echo '<p><textarea id="js" name="js" rows="20" cols="90" />' . $js . '</textarea></p>';
+  
 }
 
 function pears_save_post( $post_id ) {
@@ -561,4 +566,7 @@ function pears_save_post( $post_id ) {
 	
 	$css_data = $_POST['css'];
 	update_post_meta($post_id, 'css', $css_data);
+  
+	$js_data = $_POST['js'];
+	update_post_meta($post_id, 'js', $js_data);
 }

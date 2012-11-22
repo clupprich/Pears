@@ -31,6 +31,10 @@ $(document).ready(function() {
 		$('#style textarea').select();
 		return false;
 	});
+	$('#code a.clip').click(function(){
+		$('#code textarea').select();
+		return false;
+	});
 	
 	// expand/collapse side nav
 	$('#nav-toggle').click(function() {
