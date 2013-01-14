@@ -30,9 +30,11 @@
 			
 			<h4><?php the_category(' '); ?> <span class="sep">&rarr;</span> <?php the_title(); ?></h4>
 			
+    <?php if(!has_tag('text-only', $post)) { ?>
 			<div id="pattern-wrap" class="group">
-<?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>
+          <?php $key="html"; echo get_post_meta($post->ID, $key, true); ?>
 			</div>
+    <?php } ?>
 		</div>
     
 		<?php if(!has_tag('text-only', $post)) { ?>
